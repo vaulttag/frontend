@@ -102,16 +102,17 @@ const AccountDialog = () =>
               </IconButton>
             </Tooltip>
 
-            <Tooltip title="View on explore" placement="top">
+            <Tooltip title="View on goerli.etherscan.io" placement="top">
               <IconButton
                 size="small"
                 onClick={() => {
                   window.open(
-                    library?.network.chainId != 3114 ? `https://${library?.network?.name}.etherscan.io/address/${toAddress}`: `https://hyperspace.filfox.info/en/address/${toAddress}`,
+                    `https://${library?.network?.name}.etherscan.io/address/${account}`,
                     "_blank"
                   );
                 }}
               >
+
                 <ShareIcon />
               </IconButton>
             </Tooltip>

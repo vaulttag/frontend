@@ -12,16 +12,17 @@
     "@emotion/react": "^11.10.4",
     "@emotion/styled": "^11.10.4",
     "@mui/icons-material": "^5.10.6",
-    "usedapp": "git+https://github.com/sagarjethi/usedapp.git#master",
     "@mui/material": "^5.10.8",
     "@mui/styles": "^5.10.9",
     "@mui/x-data-grid": "^5.17.7",
+    
     "ethers": "^5.7.1",
     "next": "12.3.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-hot-toast": "^2.4.0",
-    "react-spinners": "^0.13.5"
+    "react-spinners": "^0.13.5",
+    "@sagarjethi/usedapp": "1.0.0"
   },
   "devDependencies": {
     "@types/node": "18.8.2",

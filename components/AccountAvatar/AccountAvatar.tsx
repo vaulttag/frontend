@@ -58,13 +58,13 @@ const AccountAvatar: React.FC<Props> = ({ toAddress, truncate }) => {
           <ContentCopyRounded sx={styles.copyIcon} />
         </IconButton>
       </Tooltip>
-      <Tooltip title="View on explore" placement="top">
+      <Tooltip title="View on goerli.etherscan.io" placement="top">
         <IconButton
           size="small"
           sx={styles.iconButton}
           onClick={() => {
             window.open(
-              library?.network.chainId != 3114 ? `https://${library?.network?.name}.etherscan.io/address/${toAddress}`: `https://hyperspace.filfox.info/en/address/${toAddress}`,
+              `https://${library?.network?.name}.etherscan.io/address/${toAddress}`,
               "_blank"
             );
           }}

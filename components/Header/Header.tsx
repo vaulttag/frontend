@@ -44,8 +44,7 @@ const Header = () => {
   );
 
   const etherBalance = useEtherBalance(walletList?.[+walletId]);
-  console.log("library",library);
- 
+
   return (
     // style={{"background":"#2491A6", "background-image": "linear-gradient(to bottom right, red, yellow)"}}
     <header className="header" >

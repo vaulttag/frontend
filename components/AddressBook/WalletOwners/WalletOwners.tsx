@@ -44,7 +44,7 @@ const AddressCell = (params: GridRenderCellParams) => {
           <ContentCopyRounded sx={styles.copyIcon} />
         </IconButton>
       </Tooltip>
-      <Tooltip title="View on explore" placement="top">
+      <Tooltip title="View on goerli.etherscan.io" placement="top">
         <IconButton
           size="small"
           sx={styles.iconButton}

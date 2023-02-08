@@ -302,7 +302,7 @@ const MakeTransactionDialog: React.FC<Props> = ({
                       <ContentCopyRounded sx={styles.copyIcon} />
                     </IconButton>
                   </Tooltip>
-                  <Tooltip title="View on explore" placement="top">
+                  <Tooltip title="View on goerli.etherscan.io" placement="top">
                     <IconButton
                       size="small"
                       sx={styles.iconButton}
@@ -327,7 +327,7 @@ const MakeTransactionDialog: React.FC<Props> = ({
                     {accountBalance
                       ? parseFloat(formatEther(accountBalance)).toFixed(4)
                       : 0.0}{" "}
-                    FIL
+                    ETH
                   </Typography>{" "}
                 </Typography>
               </Box>
@@ -396,7 +396,7 @@ const MakeTransactionDialog: React.FC<Props> = ({
                       <ContentCopyRounded sx={styles.copyIcon} />
                     </IconButton>
                   </Tooltip>
-                  <Tooltip title="View on explore" placement="top">
+                  <Tooltip title="View on goerli.etherscan.io" placement="top">
                     <IconButton
                       size="small"
                       sx={styles.iconButton}
@@ -421,7 +421,7 @@ const MakeTransactionDialog: React.FC<Props> = ({
                     {walletBalance
                       ? parseFloat(formatEther(walletBalance)).toFixed(4)
                       : 0.0}{" "}
-                    FIL
+                    ETH
                   </Typography>{" "}
                 </Typography>
               </Box>

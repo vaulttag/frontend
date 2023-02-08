@@ -138,7 +138,7 @@ const WalletDetails = ( ) =>
                     <ContentCopyRounded  />
                   </IconButton>
                 </Tooltip>
-               <Tooltip title="View on explore" placement="top">
+               <Tooltip title="View on goerli.etherscan.io" placement="top">
                   <IconButton
                     size="small"
                     // sx={styles.iconButton}
@@ -166,7 +166,7 @@ const WalletDetails = ( ) =>
                   Total Balance
                 </Typography>
                 <Typography variant="h6" color="primary.main">
-                  {etherBalance ? formatEther(etherBalance) : 0.0} FIL
+                  {etherBalance ? formatEther(etherBalance) : 0.0} ETH
                 </Typography>
               </Box>
 
@@ -210,9 +210,9 @@ const WalletDetails = ( ) =>
                                 </Typography>
                                 <Select fullWidth
                                       
-                                      variant="outlined" labelId="SelectAsset" id="select" value="FIL">
-                                  <MenuItem value="FIL">FIL</MenuItem>
-                                  <MenuItem value="USDT">USDT</MenuItem>
+                                      variant="outlined" labelId="SelectAsset" id="select" value="ETH">
+                                  <MenuItem value="10">ETH</MenuItem>
+                                  <MenuItem value="20">USDT</MenuItem>
                                 </Select>
 
                               <Box>
@@ -247,7 +247,7 @@ const WalletDetails = ( ) =>
                                 Available  Balance
                               </Typography>
                               <Typography variant="h6" color="primary.main">
-                                {etherBalance ? formatEther(etherBalance) : 0.0} FIL
+                                {etherBalance ? formatEther(etherBalance) : 0.0} ETH
                               </Typography>
                             </Box>
 
@@ -285,7 +285,7 @@ const WalletDetails = ( ) =>
                                 <Select fullWidth
                                       
                                       variant="outlined" labelId="SelectAsset" id="select" value="ETH">
-                                  <MenuItem value="10">FIL</MenuItem>
+                                  <MenuItem value="10">ETH</MenuItem>
                                   <MenuItem value="20">USDT</MenuItem>
                                 </Select>
 

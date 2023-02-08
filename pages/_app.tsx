@@ -1,6 +1,6 @@
 import type { AppProps } from "next/app";
 import { StyledEngineProvider, ThemeProvider } from "@mui/material";
-import { Mainnet, DAppProvider, Config, Goerli, Hyperspace } from "usedapp";
+import { Mainnet, DAppProvider, Config, Goerli } from "usedapp";
 import { getDefaultProvider } from "ethers";
 import { Toaster } from "react-hot-toast";
 import { theme } from "../theme";
@@ -8,10 +8,10 @@ import { Layout } from "../components";
 import "../styles/globals.css";
 
 const config: Config = {
-  readOnlyChainId: Hyperspace.chainId,
+  readOnlyChainId: Goerli.chainId,
   readOnlyUrls: {
     [Mainnet.chainId]: getDefaultProvider("mainnet"),
-    [Hyperspace.chainId]: "https://filecoin-hyperspace.chainstacklabs.com/rpc/v0",
+    [Goerli.chainId]: process.env.NEXT_PUBLIC_GOERLI_RPC_URL || "",
   },
 };
 

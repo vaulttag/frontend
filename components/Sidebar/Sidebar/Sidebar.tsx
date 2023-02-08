@@ -108,7 +108,7 @@ const Sidebar = () => {
                     <ContentCopyRounded sx={styles.copyIcon} />
                   </IconButton>
                 </Tooltip>
-                <Tooltip title="View on explore" placement="top">
+                <Tooltip title="View on goerli.etherscan.io" placement="top">
                   <IconButton
                     size="small"
                     sx={styles.iconButton}
@@ -128,7 +128,7 @@ const Sidebar = () => {
                   Total Balance
                 </Typography>
                 <Typography variant="h6" color="primary.main">
-                  {etherBalance ? formatEther(etherBalance) : 0.0} FIL
+                  {etherBalance ? formatEther(etherBalance) : 0.0} ETH
                 </Typography>
               </Stack>
 
