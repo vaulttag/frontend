@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 {
   "name": "multisig-wallet-frontend",
   "version": "0.1.0",
@@ -76,4 +75,3 @@
     "typescript": "4.8.4"
   }
 }
->>>>>>> ac69b8aed328b21e4010727a6bcd083d2b27c480
